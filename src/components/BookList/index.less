@@ -1,0 +1,53 @@
+.bookList {
+  background: url('../../assets/img/bg.png');
+  height: 600px;
+
+  .desc {
+    color: #f3deb4;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 30px;
+  }
+
+  .book-container {
+    height: 300px;
+    margin: 20px 200px;
+
+    .left {
+      display: inline-flex;
+      width: 50%;
+      .cover {
+        width: 200px;
+        height: 273px;
+      }
+      .content {
+        position: relative;
+        flex: 1;
+        color: #fff;
+        height: 273px;
+        background: url('../../assets//img/2.png');
+
+        .btn-box {
+          position: absolute;
+          right: 20px;
+          bottom: 20px;
+          display: block;
+          height: 41px;
+          width: 120px;
+          background: url('../../assets//img/btn.png');
+          background-size: cover;
+          text-align: center;
+          color: #fff;
+          line-height: 41px;
+        }
+      }
+    }
+
+    .right {
+      display: inline-block;
+      width: 40%;
+      margin-left: 10%;
+      
+    }
+  }
+}

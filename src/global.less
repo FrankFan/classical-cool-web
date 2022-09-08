@@ -1,4 +1,6 @@
-@import "~antd/dist/antd.less";
+@import '~normalizecss/normalize.css';
+@import '~antd/dist/antd.less';
+
 html,
 body {
   height: 100%;
@@ -12,4 +14,45 @@ body {
   // background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+input,
+textarea {
+  outline: none;
+  -webkit-user-select: initial;
+}
+form {
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+}
+video {
+  display: block;
+  width: 100%;
+  font-size: 0.5rem;
+}
+img {
+  display: block;
+  object-fit: cover;
+}
+p {
+  margin: 0;
+}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
 }

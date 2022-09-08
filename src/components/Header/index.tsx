@@ -1,6 +1,7 @@
-import React from 'react';
-import { FC } from 'react';
-import './index.less';
+import React from "react";
+import { FC } from "react";
+import ConnectWalletButton from "../ConnectWalletButton";
+import "./index.less";
 interface HeaderProps {}
 
 const Header: FC<HeaderProps> = () => {
@@ -37,7 +38,9 @@ const Header: FC<HeaderProps> = () => {
           </li>
         </ul>
       </nav>
-      <div className='btn'><button>连接钱包</button></div>
+      <div className="btn">
+        <ConnectWalletButton></ConnectWalletButton>
+      </div>
     </header>
   );
 };

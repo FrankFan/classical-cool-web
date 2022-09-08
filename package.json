@@ -9,10 +9,14 @@
     "start": "npm run dev"
   },
   "dependencies": {
+    "@walletconnect/web3-provider": "^1.8.0",
     "antd": "^4.23.0",
     "normalizecss": "^3.0.0",
     "swiper": "^8.3.2",
-    "umi": "^4.0.17"
+    "ethers": "^5.7.0",
+    "hox": "^2.1.0",
+    "umi": "^4.0.17",
+    "web3modal": "^1.9.9"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",

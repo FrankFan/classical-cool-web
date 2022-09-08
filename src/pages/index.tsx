@@ -1,9 +1,10 @@
-import Activity from '@/components/Activity';
-import Banner from '@/components/Banner';
-import BookList from '@/components/BookList';
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
-import Record from '@/components/Record';
+import Activity from "@/components/Activity";
+import Banner from "@/components/Banner";
+import BookList from "@/components/BookList";
+import ConnectWalletButton from "@/components/ConnectWalletButton";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import Record from "@/components/Record";
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
       <Activity></Activity>
       <Record></Record>
       <Footer></Footer>
+      <ConnectWalletButton></ConnectWalletButton>
     </div>
   );
 }

@@ -1,12 +1,12 @@
-import React from 'react';
-import { FC } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import './index.less';
+import React from "react";
+import { FC } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "./index.less";
 
-import { Autoplay, Pagination, Navigation } from 'swiper';
+import { Autoplay, Pagination, Navigation } from "swiper";
 interface BannerProps {}
 
 const Banner: FC<BannerProps> = () => {
@@ -17,10 +17,10 @@ const Banner: FC<BannerProps> = () => {
         centeredSlides={true}
         autoplay={{
           delay: 2500,
-          disableOnInteraction: false
+          disableOnInteraction: false,
         }}
         pagination={{
-          clickable: true
+          clickable: true,
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}

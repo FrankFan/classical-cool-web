@@ -24,13 +24,15 @@ const BookList: FC<BookListProps> = () => {
             <article>
               古圣先贤的智慧文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案古圣先贤的智慧文案文案文案文案文案文案文案文案文案文案文案文案
             </article>
-            <a href="" className="btn-box">
-              查看详情
-            </a>
-            <div className="visitor">
-              <img src="" alt="" />
-              <img src="" alt="" />
-              <img src="" alt="" />
+            <div className="operator-wrap">
+              <div className="visitor">
+                <img src="" alt="" />
+                <img src="" alt="" />
+                <img src="" alt="" />
+              </div>
+              <a href="" className="btn-box">
+                查看详情
+              </a>
             </div>
           </div>
         </div>

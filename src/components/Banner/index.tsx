@@ -6,6 +6,8 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./index.less";
 import banner1 from "@/assets/img/banner1.png";
+import banner2 from "@/assets/img/banner1.jpg";
+import banner3 from "@/assets/img/banner2.jpg";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import Mint from "../Mint";
 interface BannerProps {}
@@ -29,6 +31,12 @@ const Banner: FC<BannerProps> = () => {
       >
         <SwiperSlide>
           <img src={banner1} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={banner2} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={banner3} alt="" />
         </SwiperSlide>
         <SwiperSlide>
           <a

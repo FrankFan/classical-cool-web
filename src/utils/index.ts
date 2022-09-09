@@ -6,3 +6,30 @@ export const truncateAddress = (address: string) => {
   if (!match) return address;
   return `${match[1]}…${match[2]}`;
 };
+export const checkIfWalletConnected = async (): Promise<string> => {
+  const { ethereum } = window;
+  if (ethereum) {
+    return new Promise(async (resolve, reject) => {
+      if (ethereum) {
+        ethereum
+          .request({
+            method: "eth_accounts",
+          })
+          .then((accounts: any) => {
+            if (accounts.length !== 0) {
+              const account = accounts[0];
+              console.log(`found account with address`, account);
+              // return account
+              resolve(account);
+            } else {
+              reject("address not found");
+            }
+          });
+      } else {
+        reject(``);
+      }
+    });
+  } else {
+    return "";
+  }
+};

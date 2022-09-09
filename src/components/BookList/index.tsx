@@ -1,8 +1,8 @@
-import React from 'react';
-import { FC } from 'react';
-import './index.less';
-import coverImg from '@/assets/img/1.png';
-import titleImg from '@/assets/img/icon-1.png';
+import React from "react";
+import { FC } from "react";
+import "./index.less";
+import coverImg from "@/assets/img/1.png";
+import titleImg from "@/assets/img/icon-1.png";
 
 interface BookListProps {}
 

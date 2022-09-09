@@ -6,7 +6,7 @@ import ConnectWalletButton from "@/components/ConnectWalletButton";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Record from "@/components/Record";
-import "./index.css";
+import "./index.less";
 
 export default function HomePage() {
   return (

@@ -1,17 +1,20 @@
 .bookList {
   background: url('../../assets/img/bg.png');
-  height: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 
   .desc {
     color: #f3deb4;
     text-align: center;
     padding-top: 50px;
     font-size: 30px;
+    align-self: center;
   }
 
   .book-container {
-    margin: 20px 250px;
-
+    display: flex;
+    align-self: center;
     .left {
       display: inline-flex;
       width: 920px;
@@ -79,19 +82,44 @@
             margin-right: 40px;
           }
         }
-        
-
-        
       }
     }
 
     .right {
-      display: inline-block;
-      width: 300px;
-      height: 273px;
-      margin-left: 10%;
+      display: flex;
+      flex-direction: column;
+      width: 460px;
+      margin-left: 40px;
       background: url('../../assets//img/soon.png') no-repeat;
-      background-size: 100% 100%;
+      background-size: cover;
+      div{
+        align-self: center;
+      }
+      .booklist-right-bookname{
+        align-self: center;
+        margin-top: 160px;
+        font-size: 60px;
+        font-family: PangMenZhengDao-Cu, PangMenZhengDao;
+        font-weight: normal;
+        color: #FFFFFF;
+        .booklist-right-bookname-bottom{
+          margin: auto;
+          width: 40px;
+          background: white;
+          height: 6px;
+        }
+
+      }
+      .booklist-right-preview{
+        font-size: 18px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #FFFFFF;
+        line-height: 22px;
+        margin-top: 130px;
+        border-top: solid 1px white;
+        border-bottom: solid 1px white;
+      }
     }
   }
 }

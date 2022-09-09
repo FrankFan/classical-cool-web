@@ -1,8 +1,8 @@
-import React from 'react';
-import { FC } from 'react';
-import './index.less';
-import coverImg from '@/assets/img/1.png';
-import titleImg from '@/assets/img/icon-1.png';
+import React from "react";
+import { FC } from "react";
+import "./index.less";
+import coverImg from "@/assets/img/1.png";
+import titleImg from "@/assets/img/icon-1.png";
 
 interface BookListProps {}
 
@@ -40,6 +40,7 @@ const BookList: FC<BookListProps> = () => {
           {/* <img src="" alt="" className="coming-soon-book" /> */}
           <div className="booklist-right-bookname">
             <span className="booklist-right-bookname-txt">道德经</span>
+            <div className="booklist-right-bookname-bottom"></div>
           </div>
           <div className="booklist-right-preview">即将于10月开始上链</div>
         </div>

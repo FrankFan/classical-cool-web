@@ -10,23 +10,24 @@
   }
 
   .book-container {
-    height: 478px;
-    margin: 20px 200px;
+    // margin: 20px 200px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    width: 100%;
 
     .left {
       display: inline-flex;
-      width: 50%;
+      width: 920px;
+      height: 478px;
       .cover {
-        width: 200px;
-        height: 273px;
+        // width: 200px;
+        // height: 273px;
       }
       .content {
         position: relative;
         flex: 1;
         color: #fff;
-        height: 273px;
         background: url('../../assets//img/2.png');
         padding: 20px;
         .title {
@@ -81,9 +82,16 @@
 
     .right {
       display: inline-block;
-      width: 40%;
-      margin-left: 10%;
+      width: 460px;
+      margin-left: 40px;
       background:url(../../assets/img/ssrs.png);
     }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .book-container {
+    width: 1420px;
+    height: 478px;
   }
 }

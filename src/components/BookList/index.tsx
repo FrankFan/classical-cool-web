@@ -24,19 +24,25 @@ const BookList: FC<BookListProps> = () => {
             <article>
               古圣先贤的智慧文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案古圣先贤的智慧文案文案文案文案文案文案文案文案文案文案文案文案
             </article>
-            <a href="" className="btn-box">
-              查看详情
-            </a>
-            {/* <div className="visitor">
-              <img src="" alt="" />
-              <img src="" alt="" />
-              <img src="" alt="" />
-            </div> */}
+            <div className="operator-wrap">
+              <div className="visitor">
+                <img src="" alt="" />
+                <img src="" alt="" />
+                <img src="" alt="" />
+              </div>
+              <a href="" className="btn-box">
+                查看详情
+              </a>
+            </div>
           </div>
         </div>
         <div className="right">
-        <img src="" alt="" className="coming-soon-book" />
-      </div>
+          {/* <img src="" alt="" className="coming-soon-book" /> */}
+          <div className="booklist-right-bookname">
+            <span className="booklist-right-bookname-txt">道德经</span>
+          </div>
+          <div className="booklist-right-preview">即将于10月开始上链</div>
+        </div>
       </div>
     </div>
   );

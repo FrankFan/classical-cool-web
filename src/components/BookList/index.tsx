@@ -34,9 +34,13 @@ const BookList: FC<BookListProps> = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="right">
-        <img src="" alt="" className="coming-soon-book" />
+        <div className="right">
+          {/* <img src="" alt="" className="coming-soon-book" /> */}
+          <div className="booklist-right-bookname">
+            <span className="booklist-right-bookname-txt">道德经</span>
+          </div>
+          <div className="booklist-right-preview">即将于10月开始上链</div>
+        </div>
       </div>
     </div>
   );

@@ -15,7 +15,7 @@ export default function HomePage() {
       <Activity></Activity>
       <Record></Record>
       <Footer></Footer>
-      <ConnectWalletButton></ConnectWalletButton>
+      {/* <ConnectWalletButton></ConnectWalletButton> */}
     </div>
   );
 }

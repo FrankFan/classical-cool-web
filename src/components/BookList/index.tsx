@@ -27,16 +27,16 @@ const BookList: FC<BookListProps> = () => {
             <a href="" className="btn-box">
               查看详情
             </a>
-            <div className="visitor">
+            {/* <div className="visitor">
               <img src="" alt="" />
               <img src="" alt="" />
               <img src="" alt="" />
-            </div>
+            </div> */}
           </div>
         </div>
-      </div>
-      <div className="right">
+        <div className="right">
         <img src="" alt="" className="coming-soon-book" />
+      </div>
       </div>
     </div>
   );

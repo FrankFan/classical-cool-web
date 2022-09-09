@@ -8,7 +8,7 @@ interface BookListProps {}
 
 const BookList: FC<BookListProps> = () => {
   return (
-    <div className="bookList">
+    <div className="bookList" id="booklist">
       <p className="desc">
         790,028 <span>守护者</span>
       </p>
@@ -26,9 +26,9 @@ const BookList: FC<BookListProps> = () => {
             </article>
             <div className="operator-wrap">
               <div className="visitor">
+                {/* <img src="" alt="" />
                 <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
+                <img src="" alt="" /> */}
               </div>
               <a href="" className="btn-box">
                 查看详情

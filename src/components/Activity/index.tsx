@@ -1,10 +1,10 @@
-import { FC } from 'react';
-import './less.less';
+import { FC } from "react";
+import "./less.less";
 interface ActivityProps {}
 
 const Activity: FC<ActivityProps> = () => {
   return (
-    <div className="activity">
+    <div className="activity" id="activity">
       <div className="timeline">
         <p className="title">Book NFT Mint Activity</p>
         <div className="desc">
@@ -40,7 +40,7 @@ const Activity: FC<ActivityProps> = () => {
             <li>
               <p>
                 <span className="circle"></span>
-                <span>西汉200年王莽篡位焚书</span>{' '}
+                <span>西汉200年王莽篡位焚书</span>{" "}
               </p>
               <p>
                 当时整个藏书不过13000卷。可是随着王莽篡位，这13000卷书全部焚毁。
@@ -56,7 +56,7 @@ const Activity: FC<ActivityProps> = () => {
             <li>
               <p>
                 <span className="circle"></span>
-                <span>永嘉之祸，西晋的皇宫被烧</span>{' '}
+                <span>永嘉之祸，西晋的皇宫被烧</span>{" "}
               </p>
               <p>
                 晋武帝司马炎开始重新修书，藏书。但是永嘉之祸时，西晋的皇宫被烧，书再次一本都没留下。

@@ -12,7 +12,7 @@ const ConnectWalletButton: FC<ConnectWalletButtonProps> = () => {
     connectWallet();
   };
   return (
-    <div onClick={handleConnectWallet}>
+    <div onClick={handleConnectWallet} className="btn-box">
       {account ? truncateAddress(account) : <div>连接钱包</div>}
     </div>
   );

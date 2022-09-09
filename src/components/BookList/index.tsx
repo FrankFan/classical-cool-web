@@ -18,11 +18,11 @@ const BookList: FC<BookListProps> = () => {
           <div className="content">
             <p className="title">
               <img className="title-icon" src={titleImg} alt="" />
-              <span>需要个标题（热卖中）</span>
+              <span>论语通俗流传版 NFT（0.1 ETH）</span>
             </p>
             <p className="author">孔子</p>
             <article>
-              古圣先贤的智慧文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案文案古圣先贤的智慧文案文案文案文案文案文案文案文案文案文案文案文案
+              春秋时期思想家、教育家孔子的弟子及再传弟子记录孔子及其弟子言行而编成的语录文集，成书于战国前期。全书共20篇492章，以语录体为主，叙事体为辅，较为集中地体现了孔子及儒家学派的政治主张、伦理思想、道德观念、教育原则等。
             </article>
             <div className="operator-wrap">
               <div className="visitor">

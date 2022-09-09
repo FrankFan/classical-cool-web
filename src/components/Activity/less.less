@@ -2,9 +2,12 @@
   padding: 10px 250px;
   background: url('../../assets/img/bg4.png') no-repeat;
   color: #fff;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
 
   .title {
-    font-size: 25px;
+    font-size: 50px;
     font-family: MicrosoftYaHei-Bold, MicrosoftYaHei;
     font-weight: bold;
     color: #ffffff;
@@ -12,27 +15,32 @@
     text-align: center;
   }
   .content {
+    align-self: center;
+    max-width: 1420px;
     article {
-      font-size: 10px;
       font-family: PingFangSC-Regular, PingFang SC;
       color: #ffffff;
       line-height: 20px;
       margin-bottom: 40px;
+      line-height: 34px;
+      letter-spacing: 1px;
+      text-indent: 40px;
     }
 
     .desc {
       background: url('../../assets/img/bg3.png') no-repeat;
       background-size: 100% 100%;
       padding: 30px 15px 15px;
-
+      
       ul {
+        margin-top: 30px;
         overflow-y: auto;
-        margin: 0 26px;
-        height: 311px;
+        padding: 0px 5%;
+        height: 900px;
         li {
           margin-bottom: 10px;
           P:first-child {
-            font-size: 14px;
+            font-size: 28px;
             font-family: PingFangSC-Medium, PingFang SC;
             font-weight: 500;
             color: #f3e0ba;
@@ -49,7 +57,6 @@
             }
           }
           p:last-child {
-            font-size: 10px;
             font-family: PingFangSC-Regular, PingFang SC;
             font-weight: 400;
             color: #ffffff;
@@ -60,6 +67,8 @@
     }
   }
   .timeline {
+    max-width: 1420px;
+    align-self: center;
     .desc {
       display: flex;
       height: 250px;

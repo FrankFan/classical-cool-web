@@ -1,15 +1,15 @@
-import React from "react";
-import { FC } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import "./index.less";
-import banner1 from "@/assets/img/banner1.png";
-import banner2 from "@/assets/img/banner1.jpg";
-import banner3 from "@/assets/img/banner2.jpg";
-import { Autoplay, Pagination, Navigation } from "swiper";
-import Mint from "../Mint";
+import React from 'react';
+import { FC } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import './index.less';
+import banner1 from '@/assets/img/banner1.png';
+import banner2 from '@/assets/img/banner1.jpg';
+import banner3 from '@/assets/img/banner2.jpg';
+import { Autoplay, Pagination, Navigation } from 'swiper';
+import Mint from '../Mint';
 interface BannerProps {}
 
 const Banner: FC<BannerProps> = () => {
@@ -18,14 +18,15 @@ const Banner: FC<BannerProps> = () => {
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
+        loop
+        // autoplay={{
+        //   delay: 3000,
+        //   disableOnInteraction: false
+        // }}
         pagination={{
-          clickable: true,
+          clickable: true
         }}
-        navigation={true}
+        // navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >

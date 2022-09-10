@@ -1,5 +1,6 @@
 .banner {
   position: relative;
+  height: 521px;
   .swiper {
     width: 100%;
     height: 100%;
@@ -36,5 +37,20 @@
     display: block;
     content: '';
     padding-top: 30%;
+  }
+
+  /* 圆点的样式 */
+  .swiper-pagination-bullet {
+    width: 24px !important;
+    height: 24px !important;
+    background: url('https://img.dpm.org.cn/Public/static/themes/image/bo/dian2.png')
+      no-repeat left center;
+    opacity: 1;
+  }
+
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: url('https://img.dpm.org.cn/Public/static/themes/image/bo/dian2.png');
+    background-position: right center;
+    opacity: 1;
   }
 }

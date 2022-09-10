@@ -16,8 +16,8 @@ export default function HomePage() {
       <BookList></BookList>
       {/* <BookShow></BookShow> */}
       <Activity></Activity>
-      <Record></Record>
-      <Footer></Footer>
+      {/* <Record></Record>
+      <Footer></Footer> */}
       {/* <ConnectWalletButton></ConnectWalletButton> */}
     </div>
   );

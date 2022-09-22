@@ -1,12 +1,12 @@
-import React from "react";
-import { FC } from "react";
-import "./index.less";
-import coverImg from "@/assets/img/1.png";
-import titleImg from "@/assets/img/icon-1.png";
-import Mint from "../Mint";
-import { BackTop } from "antd";
-import books from "@/data/books";
-import { history } from "umi";
+import React from 'react';
+import { FC } from 'react';
+import './index.less';
+import coverImg from '@/assets/img/1.png';
+import titleImg from '@/assets/img/icon-1.png';
+import Mint from '../Mint';
+import { BackTop } from 'antd';
+import books from '@/data/books';
+import { history } from 'umi';
 
 interface BookListProps {}
 
@@ -17,21 +17,21 @@ const BookList: FC<BookListProps> = () => {
     };
     return books.map((item, idx) => {
       return (
-        <div className="right">
+        <div key={idx} className='right'>
           <div
-            className="bg"
+            className='bg'
             style={{ backgroundImage: `url(${item.backgroudUrl})` }}
             key={idx}
           ></div>
-          <div className="booklist-right-bookname">
-            <span className="booklist-right-bookname-txt">{item.title}</span>
-            <div className="booklist-right-bookname-bottom"></div>
+          <div className='booklist-right-bookname'>
+            <span className='booklist-right-bookname-txt'>{item.title}</span>
+            <div className='booklist-right-bookname-bottom'></div>
           </div>
           {/* <div className="booklist-right-preview">即将于10月开始上链</div> */}
-          <div style={{ display: "flex" }}>
-            <Mint></Mint>
+          <div style={{ display: 'flex' }}>
+            <Mint id={item.id}></Mint>
             <div
-              className="mint"
+              className='mint'
               onClick={() => {
                 goToDetail(item.itemId);
               }}
@@ -44,11 +44,11 @@ const BookList: FC<BookListProps> = () => {
     });
   };
   return (
-    <div className="bookList" id="booklist">
-      <p className="desc">
+    <div className='bookList' id='booklist'>
+      <p className='desc'>
         790,028 <span>守护者</span>
       </p>
-      <div className="book-container">
+      <div className='book-container'>
         {/* <div className="left">
           <img src={coverImg} alt="" className="cover" />
           <div className="content">

@@ -1,53 +1,41 @@
-import { useStore } from "@/hooks/useStore";
-import { FC } from "react";
-import { ethers } from "ethers";
-import abiClassicalBookNFT from "../../utils/ClassicalBookNFTAbi.json";
+import { useStore } from '@/hooks/useStore';
+import { FC } from 'react';
+import { ethers } from 'ethers';
+import abiClassicalBookNFT from '@/utils/ClassicalBookNFTAbi.json';
+import Swal from 'sweetalert2';
 
-console.log("abi ", abiClassicalBookNFT);
+interface RecordProps {
+  id: number;
+}
 
-interface RecordProps {}
+// 合约地址
+const contractAddress = '0xd15294F1D0132ed5C46e3cf568CFfc717fC583F4';
 
-const Mint: FC<RecordProps> = () => {
+const Mint: FC<RecordProps> = ({ id }) => {
   const { account, etherProvider } = useStore();
   const signer = etherProvider?.getSigner();
-  console.log(account);
+  // console.log(account, 'bookId = ', id);
 
   const mintNFT = async () => {
-    const contractAddress = "0xd15294F1D0132ed5C46e3cf568CFfc717fC583F4";
     // contract
     const contract = new ethers.Contract(
       contractAddress,
       abiClassicalBookNFT,
       signer
     );
-    console.log("contract ", contract);
 
     if (contract) {
       try {
-        const bookId = "1";
+        const bookId = id;
         const res = await contract.mintTo(account, bookId);
-        console.log("contract.mintTo res = ", res);
+        console.log('mint result = ', res);
+        Swal.fire('Success', 'mint申请已提交', 'success');
 
-        // TODO: 请求服务器接口
-
-        contract.on("mintEvent", (from, to, tokenId) => {
-          // Toast.show({
-          //   icon: 'success',
-          //   content: `mint成功, NFT 编号${tokenId}`,
-          // });
-          // setTotal(tokenId.toNumber());
+        contract.on('mintEvent', (from, to, tokenId) => {
+          console.log('触发mint事件', from, to, tokenId);
         });
-        // Toast.show({
-        //   icon: 'success',
-        //   content: `mint申请已提交`,
-        // });
       } catch (error: any) {
-        console.log("error: ", error);
-        if (error.code === 4001) {
-          // Toast.show({
-          //   content: `取消操作`,
-          // });
-        }
+        console.log('error:', error);
       }
     }
   };
@@ -57,7 +45,7 @@ const Mint: FC<RecordProps> = () => {
   };
 
   return (
-    <div className="mint">
+    <div className='mint'>
       <button onClick={mintHandler}>Mint</button>
     </div>
   );

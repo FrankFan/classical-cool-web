@@ -9,18 +9,24 @@
     "start": "npm run dev"
   },
   "dependencies": {
+    "@ant-design/icons": "^4.7.0",
     "@walletconnect/web3-provider": "^1.8.0",
     "antd": "^4.23.0",
-    "normalizecss": "^3.0.0",
-    "swiper": "^8.3.2",
+    "arseeding-js": "^0.0.14",
     "ethers": "^5.7.0",
     "hox": "^2.1.0",
+    "normalizecss": "^3.0.0",
+    "react-markdown": "^8.0.3",
+    "react-pageflip": "^2.0.3",
+    "swiper": "^8.3.2",
     "umi": "^4.0.17",
     "web3modal": "^1.9.9"
   },
   "devDependencies": {
+    "@types/page-flip": "^2.0.0",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "sass": "^1.54.9",
     "typescript": "^4.1.2"
   }
 }

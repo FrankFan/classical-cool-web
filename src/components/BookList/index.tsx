@@ -12,19 +12,6 @@ interface BookListProps {}
 
 const BookList: FC<BookListProps> = () => {
   const makeBookList = () => {
-    // let data = [
-    //   { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
-    //   { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
-    //   { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
-    //   { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
-    //   { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
-    //   { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
-    //   { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
-    //   { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
-    //   { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
-    //   { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
-    //   { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
-    // ];
     const goToDetail = (id: string) => {
       history.push(`/${id}`);
     };

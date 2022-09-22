@@ -7,7 +7,7 @@ import ReactMarkdown from "react-markdown";
 import Header from "@/components/Header";
 
 import "./index.less";
-import "./style.less";
+import "./style.scss";
 import useBookInfo from "@/hooks/useBookInfo";
 
 interface DetailProps {}

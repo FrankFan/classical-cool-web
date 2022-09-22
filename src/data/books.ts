@@ -18,7 +18,7 @@ export default [
     itemId: "gMzGN63YLxwHlJmxrjYvR0I7z-oq2KqEyqSwblbQY_w",
     title: "道德经",
     backgroudUrl:
-      "https://arseed.web3infra.dev/0BJLQ11wknZoi_hrjGfpSpFIAt94WpFPt1XFlZaOHmA",
+      "https://arseed.web3infra.dev/aVj2UlglUNpaoptVCn3DEmHytO8EeO-LptAcJn6vXNg",
   },
   {
     id: 7,
@@ -67,7 +67,7 @@ export default [
     itemId: "XBUynHKJIN25Q4bMObn--KakeEAWy9ErU5k9VPxuhPY",
     title: "论语",
     backgroudUrl:
-      "https://arseed.web3infra.dev/vvF3X6ay647W62htqrl9IPo-NSIuv165Ci5NN2218Es",
+      "https://arseed.web3infra.dev/VmIEe2jbHCNcCXRIhQb85q8Gcwpcj0j-c1ynCidUTnM",
   },
   {
     id: 11,

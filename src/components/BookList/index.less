@@ -21,6 +21,7 @@
   .book-container {
     display: flex;
     align-self: center;
+    flex-wrap: wrap;
     .left {
       display: inline-flex;
       width: 920px;
@@ -89,10 +90,10 @@
     .right {
       display: flex;
       flex-direction: column;
-      width: 460px;
+      width: 450px;
       margin-left: 40px;
-      background: url('../../assets//img/soon.png') no-repeat;
       background-size: cover;
+      margin-bottom: 40px;
       div{
         align-self: center;
       }
@@ -128,7 +129,7 @@
 @media screen and (min-width: 800px) {
   .book-container {
     width: 1480px;
-    height: 478px;
+    // height: 478px;
   }
 }
 

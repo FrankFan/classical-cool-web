@@ -3,17 +3,49 @@ import { FC } from "react";
 import "./index.less";
 import coverImg from "@/assets/img/1.png";
 import titleImg from "@/assets/img/icon-1.png";
+import Mint from "../Mint";
+import { BackTop } from "antd";
 
 interface BookListProps {}
 
 const BookList: FC<BookListProps> = () => {
+  const makeBookList = () => {
+    let data = [
+      { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
+      { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
+      { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
+      { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
+      { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
+      { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
+      { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
+      { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
+      { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
+      { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
+      { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
+    ];
+    return data.map((item) => {
+      return (
+        <div
+          className="right"
+          style={{ backgroundImage: `url(${item.backgroudUrl})` }}
+        >
+          <div className="booklist-right-bookname">
+            <span className="booklist-right-bookname-txt">{item.title}</span>
+            <div className="booklist-right-bookname-bottom"></div>
+          </div>
+          {/* <div className="booklist-right-preview">即将于10月开始上链</div> */}
+          <Mint></Mint>
+        </div>
+      );
+    });
+  };
   return (
     <div className="bookList" id="booklist">
       <p className="desc">
         790,028 <span>守护者</span>
       </p>
       <div className="book-container">
-        <div className="left">
+        {/* <div className="left">
           <img src={coverImg} alt="" className="cover" />
           <div className="content">
             <p className="title">
@@ -26,24 +58,14 @@ const BookList: FC<BookListProps> = () => {
             </article>
             <div className="operator-wrap">
               <div className="visitor">
-                {/* <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" /> */}
               </div>
               <a href="" className="btn-box">
                 查看详情
               </a>
             </div>
           </div>
-        </div>
-        <div className="right">
-          {/* <img src="" alt="" className="coming-soon-book" /> */}
-          <div className="booklist-right-bookname">
-            <span className="booklist-right-bookname-txt">道德经</span>
-            <div className="booklist-right-bookname-bottom"></div>
-          </div>
-          <div className="booklist-right-preview">即将于10月开始上链</div>
-        </div>
+        </div> */}
+        {makeBookList()}
       </div>
     </div>
   );

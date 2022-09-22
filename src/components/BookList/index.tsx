@@ -5,71 +5,53 @@ import coverImg from "@/assets/img/1.png";
 import titleImg from "@/assets/img/icon-1.png";
 import Mint from "../Mint";
 import { BackTop } from "antd";
+import books from "@/data/books";
+import { history } from "umi";
 
 interface BookListProps {}
 
 const BookList: FC<BookListProps> = () => {
   const makeBookList = () => {
-    let data = [
-      { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
-      {
-        backgroudUrl: require("../../assets/pfp/吴司马孙武.jpg"),
-        title: "孙子兵法",
-      },
-      {
-        backgroudUrl: require("../../assets/pfp/ss.jpg"),
-        title: "尚书",
-      },
-      {
-        backgroudUrl: require("../../assets/pfp/zz.jpeg"),
-        title: "左传",
-      },
-      {
-        backgroudUrl: require("../../assets/pfp/zy.jpeg"),
-        title: "周易",
-      },
-      {
-        backgroudUrl: require("../../assets/pfp/shj.jpeg"),
-        title: "山海经",
-      },
-      {
-        backgroudUrl: require("../../assets/pfp/hdnj.jpeg"),
-        title: "黄帝内经",
-      },
-      {
-        backgroudUrl: require("../../assets/pfp/jgj.jpeg"),
-        title: "金刚经",
-      },
-      {
-        backgroudUrl: require("../../assets/pfp/dx.jpeg"),
-        title: "大学",
-      },
-      {
-        backgroudUrl: require("../../assets/pfp/dzj.jpg"),
-        title: "地藏经",
-      },
-      {
-        backgroudUrl: require("../../assets/pfp/mz.jpeg"),
-        title: "墨子",
-      },
-      {
-        backgroudUrl: require("../../assets/pfp/ss.jpeg"),
-        title: "素书",
-      },
-    ];
-    return data.map((item) => {
+    // let data = [
+    //   { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
+    //   { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
+    //   { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
+    //   { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
+    //   { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
+    //   { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
+    //   { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
+    //   { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
+    //   { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
+    //   { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
+    //   { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
+    // ];
+    const goToDetail = (id: string) => {
+      history.push(`/${id}`);
+    };
+    return books.map((item, idx) => {
       return (
         <div className="right">
           <div
             className="bg"
             style={{ backgroundImage: `url(${item.backgroudUrl})` }}
+            key={idx}
           ></div>
           <div className="booklist-right-bookname">
             <span className="booklist-right-bookname-txt">{item.title}</span>
             <div className="booklist-right-bookname-bottom"></div>
           </div>
           {/* <div className="booklist-right-preview">即将于10月开始上链</div> */}
-          <Mint></Mint>
+          <div style={{ display: "flex" }}>
+            <Mint></Mint>
+            <div
+              className="mint"
+              onClick={() => {
+                goToDetail(item.itemId);
+              }}
+            >
+              <button>Read</button>
+            </div>
+          </div>
         </div>
       );
     });

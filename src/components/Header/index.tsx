@@ -9,7 +9,10 @@ const Header: FC<HeaderProps> = () => {
   return (
     <header className="header">
       <div className="logo">
-        <img src="" alt="" />
+        <img
+          src="https://arseed.web3infra.dev/o81fZcXnJJYZrj4S5INq7OUhUI8I4uWOOK9NS2M8ixw"
+          alt=""
+        />
       </div>
       <nav>
         <ul>

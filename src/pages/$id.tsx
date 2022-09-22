@@ -3,7 +3,7 @@ import { FC } from "react";
 import HTMLFlipBook from "react-pageflip";
 import ReactMarkdown from "react-markdown";
 
-import "./style.scss";
+import "./style.less";
 
 interface DetailProps {}
 

@@ -12,23 +12,58 @@ const BookList: FC<BookListProps> = () => {
   const makeBookList = () => {
     let data = [
       { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
-      { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
-      { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
-      { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
-      { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
-      { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
-      { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
-      { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
-      { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
-      { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
-      { backgroudUrl: require("../../assets/img/soon.png"), title: "道德经" },
+      {
+        backgroudUrl: require("../../assets/pfp/吴司马孙武.jpg"),
+        title: "孙子兵法",
+      },
+      {
+        backgroudUrl: require("../../assets/pfp/ss.jpg"),
+        title: "尚书",
+      },
+      {
+        backgroudUrl: require("../../assets/pfp/zz.jpeg"),
+        title: "左传",
+      },
+      {
+        backgroudUrl: require("../../assets/pfp/zy.jpeg"),
+        title: "周易",
+      },
+      {
+        backgroudUrl: require("../../assets/pfp/shj.jpeg"),
+        title: "山海经",
+      },
+      {
+        backgroudUrl: require("../../assets/pfp/hdnj.jpeg"),
+        title: "黄帝内经",
+      },
+      {
+        backgroudUrl: require("../../assets/pfp/jgj.jpeg"),
+        title: "金刚经",
+      },
+      {
+        backgroudUrl: require("../../assets/pfp/dx.jpeg"),
+        title: "大学",
+      },
+      {
+        backgroudUrl: require("../../assets/pfp/dzj.jpg"),
+        title: "地藏经",
+      },
+      {
+        backgroudUrl: require("../../assets/pfp/mz.jpeg"),
+        title: "墨子",
+      },
+      {
+        backgroudUrl: require("../../assets/pfp/ss.jpeg"),
+        title: "素书",
+      },
     ];
     return data.map((item) => {
       return (
-        <div
-          className="right"
-          style={{ backgroundImage: `url(${item.backgroudUrl})` }}
-        >
+        <div className="right">
+          <div
+            className="bg"
+            style={{ backgroundImage: `url(${item.backgroudUrl})` }}
+          ></div>
           <div className="booklist-right-bookname">
             <span className="booklist-right-bookname-txt">{item.title}</span>
             <div className="booklist-right-bookname-bottom"></div>

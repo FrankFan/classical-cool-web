@@ -91,9 +91,17 @@
       display: flex;
       flex-direction: column;
       width: 450px;
-      margin-left: 40px;
+      margin: 20px;
       background-size: cover;
       margin-bottom: 40px;
+      position: relative;
+      .bg{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        position: absolute;
+        opacity: 0.5;
+      }
       div{
         align-self: center;
       }
@@ -104,6 +112,7 @@
         font-family: PangMenZhengDao-Cu, PangMenZhengDao;
         font-weight: normal;
         color: #FFFFFF;
+        z-index: 3;
         .booklist-right-bookname-bottom{
           margin: auto;
           width: 40px;

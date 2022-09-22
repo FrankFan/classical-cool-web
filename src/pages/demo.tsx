@@ -12,6 +12,7 @@ const DemoPage: FC<DemoPageProps> = () => {
   const arseedingUrl = "https://arseed.web3infra.dev";
   const instance = useRef<any>();
   const [orders, setOrders] = useState<any>([]);
+  const [url, setUrl] = useState<string>("");
   useEffect(() => {
     (async () => {
       console.log("window.ethereum", window.ethereum);
@@ -74,6 +75,9 @@ const DemoPage: FC<DemoPageProps> = () => {
             ops
           );
           console.log("res", res);
+          if (res) {
+            setUrl(res?.order?.itemId);
+          }
 
           console.log("Complete File read successfully!", event);
         } catch (error) {
@@ -111,6 +115,14 @@ const DemoPage: FC<DemoPageProps> = () => {
           获取 address 所有的 order
         </Button>
         <div>{orders}</div>
+        <div>
+          地址:
+          {url !== "" ? (
+            <a href={`https://arseed.web3infra.dev/${url}`} target="_blank">
+              {`https://arseed.web3infra.dev/${url}`}
+            </a>
+          ) : null}
+        </div>
       </div>
     </div>
   );

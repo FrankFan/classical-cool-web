@@ -17,16 +17,16 @@ const Header: FC<HeaderProps> = () => {
       <nav>
         <ul>
           <li>
-            <a href='#top'>首页</a>
+            <a href='/#top'>首页</a>
           </li>
           <li className=''>
-            <a href='#booklist'>活动</a>
+            <a href='/#booklist'>活动</a>
           </li>
           <li className=''>
-            <a href='#activity'>记录</a>
+            <a href='/#activity'>记录</a>
           </li>
-          {/* <li className="">
-            <a href="#history">历史</a>
+          {/* <li className=''>
+            <a href='#history'>历史</a>
           </li> */}
         </ul>
       </nav>

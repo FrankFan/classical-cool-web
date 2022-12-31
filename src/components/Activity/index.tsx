@@ -1,46 +1,46 @@
-import { FC } from "react";
-import "./less.less";
+import { FC } from 'react';
+import './less.less';
 interface ActivityProps {}
 
 const Activity: FC<ActivityProps> = () => {
   return (
-    <div className="activity" id="activity">
-      <div className="timeline">
-        <p className="title">Book NFT Mint Activity</p>
-        <div className="desc">
-          <div className="item">
+    <div className='activity' id='activity'>
+      <div className='timeline'>
+        <p className='title'>Book NFT Mint Activity</p>
+        <div className='desc'>
+          <div className='item'>
             <p>2022.09.09</p>
-            <p>论语</p>
+            <p>《论语》</p>
           </div>
-          <div className="item">
-            <p>2022.09.09</p>
-            <p>道德经</p>
+          <div className='item'>
+            <p>2022.10.09</p>
+            <p>《道德经》</p>
           </div>
-          <div className="item">
-            <p>2022.09.09</p>
-            <p>孙子兵法</p>
+          <div className='item'>
+            <p>2022.11.09</p>
+            <p>《孙子兵法》</p>
           </div>
         </div>
       </div>
-      <div className="content">
-        <p className="title">人类的智慧浩劫记录</p>
+      <div className='content'>
+        <p className='title'>人类的智慧浩劫记录</p>
         <article>
           典籍的传承是人类最宝贵的遗产，这些人类的知识是文明的基础，是人类发展过程中知识和智慧的记录，比黄金要更贵重。而过去人类的这些宝贵遗产能留下和传承的非常少，古代人类只能通过雕刻到石头上才能勉强留下这些宝贵的智慧，并部分传承下来，而历史上的焚书坑儒，火烧圆明园，火烧亚历山大图书馆，每一次乱象都会导致智慧惨遭荼毒，甚至绝迹。
           虽然现在的印刷术和计算机技术让这些知识的传播和复制非常容易，虽然可以避免被人为简单破坏和自然风蚀。但是无法避免统治阶级和权贵的刻意篡改，把原始作者的真实思想演变成自己的统治和奴役洗脑工具。
         </article>
-        <div className="desc">
+        <div className='desc'>
           <ul>
             <li>
               <p>
-                <span className="circle"></span>
+                <span className='circle'></span>
                 <span>秦朝焚书坑儒</span>
               </p>
               <p>秦始皇焚书坑儒烧毁了大量的书籍，数量不详细，影响深远。</p>
             </li>
             <li>
               <p>
-                <span className="circle"></span>
-                <span>西汉200年王莽篡位焚书，13000卷书全部焚毁</span>{" "}
+                <span className='circle'></span>
+                <span>西汉200年王莽篡位焚书，13000卷书全部焚毁</span>{' '}
               </p>
               <p>
                 当时整个藏书不过13000卷。可是随着王莽篡位，13000卷书全部焚毁。
@@ -48,15 +48,15 @@ const Activity: FC<ActivityProps> = () => {
             </li>
             <li>
               <p>
-                <span className="circle"></span>
+                <span className='circle'></span>
                 <span>东汉末年董卓进京烧书</span>
               </p>
               <p>董卓把书烧了个干净，数字不详，很多修书都灰飞烟灭</p>
             </li>
             <li>
               <p>
-                <span className="circle"></span>
-                <span>永嘉之祸，西晋的皇宫被烧</span>{" "}
+                <span className='circle'></span>
+                <span>永嘉之祸，西晋的皇宫被烧</span>{' '}
               </p>
               <p>
                 晋武帝司马炎开始重新修书，藏书。但是永嘉之祸时，西晋的皇宫被烧，书再次一本都没留下。
@@ -64,7 +64,7 @@ const Activity: FC<ActivityProps> = () => {
             </li>
             <li>
               <p>
-                <span className="circle"></span>
+                <span className='circle'></span>
                 <span>梁武帝灭齐国，毁书6万本</span>
               </p>
               <p>
@@ -73,7 +73,7 @@ const Activity: FC<ActivityProps> = () => {
             </li>
             <li>
               <p>
-                <span className="circle"></span>
+                <span className='circle'></span>
                 <span>中国历史最大焚书：江陵焚书，14万本书被毁</span>
               </p>
               <p>
@@ -83,7 +83,7 @@ const Activity: FC<ActivityProps> = () => {
             </li>
             <li>
               <p>
-                <span className="circle"></span>
+                <span className='circle'></span>
                 <span>安禄山之乱，尺简不藏</span>
               </p>
               <p>
@@ -92,7 +92,7 @@ const Activity: FC<ActivityProps> = () => {
             </li>
             <li>
               <p>
-                <span className="circle"></span>
+                <span className='circle'></span>
                 <span>黄巢起义，曩时遗籍，尺简无存。</span>
               </p>
               <p>
@@ -101,7 +101,7 @@ const Activity: FC<ActivityProps> = () => {
             </li>
             <li>
               <p>
-                <span className="circle"></span>
+                <span className='circle'></span>
                 <span>靖康之难，大量书籍失传</span>
               </p>
               <p>
@@ -110,14 +110,14 @@ const Activity: FC<ActivityProps> = () => {
             </li>
             <li>
               <p>
-                <span className="circle"></span>
+                <span className='circle'></span>
                 <span>伯颜临安大火</span>
               </p>
               <p>南宋末年，伯颜又对着临安放了把大火。</p>
             </li>
             <li>
               <p>
-                <span className="circle"></span>
+                <span className='circle'></span>
                 <span>乾隆皇帝禁书达三千多种，十五万多部</span>
               </p>
               <p>
@@ -126,7 +126,7 @@ const Activity: FC<ActivityProps> = () => {
             </li>
             <li>
               <p>
-                <span className="circle"></span>
+                <span className='circle'></span>
                 <span>火烧圆明园</span>
               </p>
               <p>
@@ -136,7 +136,7 @@ const Activity: FC<ActivityProps> = () => {
 
             <li>
               <p>
-                <span className="circle"></span>
+                <span className='circle'></span>
                 <span>人类历史上最严重：火烧亚历山大图书馆，70万卷书被毁</span>
               </p>
               <p>

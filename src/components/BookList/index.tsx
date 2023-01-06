@@ -1,12 +1,13 @@
-import React from 'react';
-import { FC } from 'react';
-import './index.less';
-import coverImg from '@/assets/img/1.png';
-import titleImg from '@/assets/img/icon-1.png';
-import Mint from '../Mint';
-import { BackTop } from 'antd';
-import books from '@/data/books';
-import { history } from 'umi';
+import React from "react";
+import { FC } from "react";
+import "./index.less";
+import coverImg from "@/assets/img/1.png";
+import titleImg from "@/assets/img/icon-1.png";
+import Mint from "../Mint";
+import { BackTop } from "antd";
+import books from "@/data/books";
+import { Col, Row } from "antd";
+import { history } from "umi";
 
 interface BookListProps {}
 
@@ -17,21 +18,27 @@ const BookList: FC<BookListProps> = () => {
     };
     return books.map((item, idx) => {
       return (
-        <div key={idx} className='right'>
-          <div
-            className='bg'
-            style={{ backgroundImage: `url(${item.backgroudUrl})` }}
-            key={idx}
-          ></div>
-          <div className='booklist-right-bookname'>
-            <span className='booklist-right-bookname-txt'>{item.title}</span>
-            <div className='booklist-right-bookname-bottom'></div>
-          </div>
+        <Col
+          key={idx}
+          xs={12}
+          sm={4}
+          md={3}
+          lg={2}
+          xl={2}
+          className="nftItem"
+          style={{
+            backgroundImage: `url(${item.backgroudUrl})`,
+          }}
+        >
+          {/* <div className="booklist-right-bookname">
+            <span className="booklist-right-bookname-txt">{item.title}</span>
+            <div className="booklist-right-bookname-bottom"></div>
+          </div> */}
           {/* <div className="booklist-right-preview">即将于10月开始上链</div> */}
-          <div style={{ display: 'flex' }}>
+          <div style={{ display: "flex" }}>
             <Mint id={item.id}></Mint>
             <div
-              className='mint'
+              className="mint"
               onClick={() => {
                 goToDetail(item.itemId);
               }}
@@ -39,16 +46,16 @@ const BookList: FC<BookListProps> = () => {
               <button>Read</button>
             </div>
           </div>
-        </div>
+        </Col>
       );
     });
   };
   return (
-    <div className='bookList' id='booklist'>
-      <p className='desc'>
+    <div className="bookList" id="booklist">
+      <p className="desc">
         790,028 <span>守护者</span>
       </p>
-      <div className='book-container'>
+      <Row className="book-container">
         {/* <div className="left">
           <img src={coverImg} alt="" className="cover" />
           <div className="content">
@@ -70,7 +77,13 @@ const BookList: FC<BookListProps> = () => {
           </div>
         </div> */}
         {makeBookList()}
-      </div>
+        <Col xs={20} sm={16} md={12} lg={8} xl={4}>
+          Col
+        </Col>
+        <Col xs={2} sm={4} md={6} lg={8} xl={10}>
+          Col
+        </Col>
+      </Row>
     </div>
   );
 };

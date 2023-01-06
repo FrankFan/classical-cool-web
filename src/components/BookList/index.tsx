@@ -26,16 +26,17 @@ const BookList: FC<BookListProps> = () => {
           lg={2}
           xl={2}
           className="nftItem"
-          style={{
-            backgroundImage: `url(${item.backgroudUrl})`,
-          }}
+          // style={{
+          //   backgroundImage: `url(${item.backgroudUrl})`,
+          // }}
         >
           {/* <div className="booklist-right-bookname">
             <span className="booklist-right-bookname-txt">{item.title}</span>
             <div className="booklist-right-bookname-bottom"></div>
           </div> */}
           {/* <div className="booklist-right-preview">即将于10月开始上链</div> */}
-          <div style={{ display: "flex" }}>
+          <img className="nftImg" src={`${item.backgroudUrl}`} />
+          <div className="nftItemOps" style={{ display: "flex" }}>
             <Mint id={item.id}></Mint>
             <div
               className="mint"

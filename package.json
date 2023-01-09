@@ -11,7 +11,7 @@
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@walletconnect/web3-provider": "^1.8.0",
-    "antd": "^5.1.2",
+    "antd": "^4.23.0",
     "arseeding-js": "^0.0.14",
     "ethers": "^5.7.0",
     "hox": "^2.1.0",

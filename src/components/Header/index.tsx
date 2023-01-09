@@ -1,6 +1,7 @@
 import React from 'react'
 import { FC } from 'react'
 import ConnectWalletButton from '../ConnectWalletButton'
+import logo from '@/assets/logo/logo2.svg'
 
 import './index.less'
 interface HeaderProps {}
@@ -9,7 +10,7 @@ const Header: FC<HeaderProps> = () => {
   return (
     <header className='header'>
       <div className='logo'>
-        <img src='../../assets/logo/logo2.svg' alt='' />
+        <img src={logo} alt='' />
       </div>
       <nav>
         <ul>

@@ -28,7 +28,7 @@ const Header: FC<HeaderProps> = () => {
           </li> */}
         </ul>
       </nav>
-      <div className='btn'>
+      <div className='connect-btn'>
         <ConnectWalletButton></ConnectWalletButton>
       </div>
     </header>

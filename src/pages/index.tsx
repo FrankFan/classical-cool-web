@@ -1,17 +1,19 @@
-import Activity from "@/components/Activity";
-import Banner from "@/components/Banner";
-import BookList from "@/components/BookList";
+import Activity from '@/components/Activity'
+import Banner from '@/components/Banner'
+import BookList from '@/components/BookList'
 // import BookShow from "@/components/BookShow";
-import ConnectWalletButton from "@/components/ConnectWalletButton";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import Record from "@/components/Record";
-import "./index.less";
+import ConnectWalletButton from '@/components/ConnectWalletButton'
+import Footer from '@/components/Footer'
+import Header from '@/components/Header'
+import { MobileHeader } from '@/components/MobileHeader'
+import Record from '@/components/Record'
+import './index.less'
 
 export default function HomePage() {
   return (
-    <div className="home-box">
+    <div className='home-box'>
       <Header></Header>
+      <MobileHeader />
       <Banner></Banner>
       <BookList></BookList>
       {/* <BookShow></BookShow> */}
@@ -20,5 +22,5 @@ export default function HomePage() {
       <Footer></Footer> */}
       {/* <ConnectWalletButton></ConnectWalletButton> */}
     </div>
-  );
+  )
 }

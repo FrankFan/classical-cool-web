@@ -11,7 +11,9 @@ export const MobileHeader = () => {
       <div className='mobile-header'>
         <div className='h-left'>
           <div className='logo'>
-            <img src={logo} alt='' />
+            <a href='/#top'>
+              <img src={logo} alt='' />
+            </a>
           </div>
         </div>
         <div

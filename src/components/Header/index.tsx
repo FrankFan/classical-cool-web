@@ -10,7 +10,9 @@ const Header: FC<HeaderProps> = () => {
   return (
     <header className='header'>
       <div className='logo'>
-        <img src={logo} alt='' />
+        <a href='/#top'>
+          <img src={logo} alt='' />
+        </a>
       </div>
       <nav>
         <ul>

@@ -1,5 +1,5 @@
-import { FC } from 'react';
-import './less.less';
+import { FC } from 'react'
+import './less.less'
 interface ActivityProps {}
 
 const Activity: FC<ActivityProps> = () => {
@@ -28,7 +28,7 @@ const Activity: FC<ActivityProps> = () => {
           典籍的传承是人类最宝贵的遗产，这些人类的知识是文明的基础，是人类发展过程中知识和智慧的记录，比黄金要更贵重。而过去人类的这些宝贵遗产能留下和传承的非常少，古代人类只能通过雕刻到石头上才能勉强留下这些宝贵的智慧，并部分传承下来，而历史上的焚书坑儒，火烧圆明园，火烧亚历山大图书馆，每一次乱象都会导致智慧惨遭荼毒，甚至绝迹。
           虽然现在的印刷术和计算机技术让这些知识的传播和复制非常容易，虽然可以避免被人为简单破坏和自然风蚀。但是无法避免统治阶级和权贵的刻意篡改，把原始作者的真实思想演变成自己的统治和奴役洗脑工具。
         </article>
-        <div className='desc'>
+        <div className='desc-history'>
           <ul>
             <li>
               <p>
@@ -42,9 +42,7 @@ const Activity: FC<ActivityProps> = () => {
                 <span className='circle'></span>
                 <span>西汉200年王莽篡位焚书，13000卷书全部焚毁</span>{' '}
               </p>
-              <p>
-                当时整个藏书不过13000卷。可是随着王莽篡位，13000卷书全部焚毁。
-              </p>
+              <p>当时整个藏书不过13000卷。可是随着王莽篡位，13000卷书全部焚毁。</p>
             </li>
             <li>
               <p>
@@ -58,18 +56,14 @@ const Activity: FC<ActivityProps> = () => {
                 <span className='circle'></span>
                 <span>永嘉之祸，西晋的皇宫被烧</span>{' '}
               </p>
-              <p>
-                晋武帝司马炎开始重新修书，藏书。但是永嘉之祸时，西晋的皇宫被烧，书再次一本都没留下。
-              </p>
+              <p>晋武帝司马炎开始重新修书，藏书。但是永嘉之祸时，西晋的皇宫被烧，书再次一本都没留下。</p>
             </li>
             <li>
               <p>
                 <span className='circle'></span>
                 <span>梁武帝灭齐国，毁书6万本</span>
               </p>
-              <p>
-                南北朝，书籍增加到了6万多本，梁武帝灭齐国，又把这些书都烧了。
-              </p>
+              <p>南北朝，书籍增加到了6万多本，梁武帝灭齐国，又把这些书都烧了。</p>
             </li>
             <li>
               <p>
@@ -86,27 +80,21 @@ const Activity: FC<ActivityProps> = () => {
                 <span className='circle'></span>
                 <span>安禄山之乱，尺简不藏</span>
               </p>
-              <p>
-                到唐朝，安史之乱，唐玄宗在逃亡的过程中，史书有记载：“安禄山之乱，尺简不藏。”又损失了好多书籍。
-              </p>
+              <p>到唐朝，安史之乱，唐玄宗在逃亡的过程中，史书有记载：“安禄山之乱，尺简不藏。”又损失了好多书籍。</p>
             </li>
             <li>
               <p>
                 <span className='circle'></span>
                 <span>黄巢起义，曩时遗籍，尺简无存。</span>
               </p>
-              <p>
-                黄巢起义，《旧唐书经籍志》载：“广明初，黄巢干纪，再陷两京，宫庙寺署焚荡殆尽。曩时遗籍，尺简无存。”
-              </p>
+              <p>黄巢起义，《旧唐书经籍志》载：“广明初，黄巢干纪，再陷两京，宫庙寺署焚荡殆尽。曩时遗籍，尺简无存。”</p>
             </li>
             <li>
               <p>
                 <span className='circle'></span>
                 <span>靖康之难，大量书籍失传</span>
               </p>
-              <p>
-                靖康之难时，金军在都城抢走大量书籍典藏，导致这些书最后下落不明，极少有流传到北方的。
-              </p>
+              <p>靖康之难时，金军在都城抢走大量书籍典藏，导致这些书最后下落不明，极少有流传到北方的。</p>
             </li>
             <li>
               <p>
@@ -147,7 +135,7 @@ const Activity: FC<ActivityProps> = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Activity;
+export default Activity

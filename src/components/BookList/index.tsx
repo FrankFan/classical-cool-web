@@ -1,21 +1,20 @@
-import React from "react";
-import { FC } from "react";
-import "./index.less";
-import coverImg from "@/assets/img/1.png";
-import titleImg from "@/assets/img/icon-1.png";
-import Mint from "../Mint";
-import { BackTop } from "antd";
-import books from "@/data/books";
-import { Col, Row } from "antd";
-import { history } from "umi";
+import React from 'react'
+import { FC } from 'react'
+import './index.less'
+import coverImg from '@/assets/img/1.png'
+import titleImg from '@/assets/img/icon-1.png'
+import Mint from '../Mint'
+import books from '@/data/books'
+import { Col, Row } from 'antd'
+import { history } from 'umi'
 
 interface BookListProps {}
 
 const BookList: FC<BookListProps> = () => {
   const makeBookList = () => {
     const goToDetail = (id: string) => {
-      history.push(`/${id}`);
-    };
+      history.push(`/${id}`)
+    }
     return books.map((item, idx) => {
       return (
         <Col
@@ -25,7 +24,7 @@ const BookList: FC<BookListProps> = () => {
           md={3}
           lg={2}
           xl={2}
-          className="nftItem"
+          className='nftItem'
           // style={{
           //   backgroundImage: `url(${item.backgroudUrl})`,
           // }}
@@ -35,28 +34,28 @@ const BookList: FC<BookListProps> = () => {
             <div className="booklist-right-bookname-bottom"></div>
           </div> */}
           {/* <div className="booklist-right-preview">即将于10月开始上链</div> */}
-          <img className="nftImg" src={`${item.backgroudUrl}`} />
-          <div className="nftItemOps" style={{ display: "flex" }}>
+          <img className='nftImg' src={`${item.backgroudUrl}`} />
+          <div className='nftItemOps' style={{ display: 'flex' }}>
             <Mint id={item.id}></Mint>
             <div
-              className="mint"
+              className='mint'
               onClick={() => {
-                goToDetail(item.itemId);
-              }}
-            >
+                goToDetail(item.itemId)
+              }}>
               <button>Read</button>
             </div>
           </div>
         </Col>
-      );
-    });
-  };
+      )
+    })
+  }
   return (
-    <div className="bookList" id="booklist">
-      <p className="desc">
-        790,028 <span>守护者</span>
+    <div className='bookList' id='booklist'>
+      <p className='desc'>
+        <span>790,028</span>
+        <span>守护者</span>
       </p>
-      <Row className="book-container">
+      <Row className='book-container'>
         {/* <div className="left">
           <img src={coverImg} alt="" className="cover" />
           <div className="content">
@@ -86,7 +85,7 @@ const BookList: FC<BookListProps> = () => {
         </Col>
       </Row>
     </div>
-  );
-};
+  )
+}
 
-export default BookList;
+export default BookList

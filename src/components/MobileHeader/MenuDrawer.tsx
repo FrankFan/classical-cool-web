@@ -26,6 +26,8 @@ const MenuDrawer: FC<MenuDrawerProps> = ({ visible, onPopupClose }) => {
           onPopupClose()
           // setInvernalVisible(false)
         }}
+        placement='right'
+        width='230px'
         drawerStyle={{ background: 'rgb(200 184 160 / 60%)' }}>
         <div className='popup-menu'>
           <div

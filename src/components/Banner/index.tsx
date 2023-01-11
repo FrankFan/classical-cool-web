@@ -21,7 +21,7 @@ const Banner: FC<BannerProps> = () => {
         loop
         // autoplay={{
         //   delay: 3000,
-        //   disableOnInteraction: false
+        //   disableOnInteraction: false,
         // }}
         pagination={{
           clickable: true,

@@ -1,35 +1,34 @@
 export const truncateAddress = (address: string) => {
-  if (!address) return "No Account";
-  const match = address.match(
-    /^(0x[a-zA-Z0-9]{2})[a-zA-Z0-9]+([a-zA-Z0-9]{2})$/
-  );
-  if (!match) return address;
-  return `${match[1]}…${match[2]}`;
-};
+  if (!address) return 'No Account'
+  const match = address.match(/^(0x[a-zA-Z0-9]{2})[a-zA-Z0-9]+([a-zA-Z0-9]{4})$/)
+  if (!match) return address
+  return `${match[1]}…${match[2]}`
+}
+
 export const checkIfWalletConnected = async (): Promise<string> => {
-  const { ethereum } = window;
+  const { ethereum } = window
   if (ethereum) {
     return new Promise(async (resolve, reject) => {
       if (ethereum) {
         ethereum
           .request({
-            method: "eth_accounts",
+            method: 'eth_accounts',
           })
           .then((accounts: any) => {
             if (accounts.length !== 0) {
-              const account = accounts[0];
-              console.log(`found account with address`, account);
+              const account = accounts[0]
+              console.log(`found account with address`, account)
               // return account
-              resolve(account);
+              resolve(account)
             } else {
-              reject("address not found");
+              reject('address not found')
             }
-          });
+          })
       } else {
-        reject(``);
+        reject(``)
       }
-    });
+    })
   } else {
-    return "";
+    return ''
   }
-};
+}

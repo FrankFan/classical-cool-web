@@ -31,7 +31,7 @@ const Header: FC<HeaderProps> = () => {
         </ul>
       </nav>
       <div className='connect-btn'>
-        <ConnectWalletButton></ConnectWalletButton>
+        <ConnectWalletButton />
       </div>
     </header>
   )

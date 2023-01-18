@@ -21,7 +21,7 @@ const Footer: FC<FooterProps> = () => {
           <a target='_blank' href='https://github.com/classical-cool'>
             Github
           </a>
-          <a target='_blank' href='https://twitter.com/classical-cool'>
+          <a target='_blank' href='https://twitter.com/cool_classical'>
             Twitter
           </a>
         </div>

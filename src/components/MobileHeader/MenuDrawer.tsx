@@ -2,6 +2,7 @@ import { FC, useEffect, useState } from 'react'
 import { Drawer } from 'antd'
 import { useNavigate } from 'react-router-dom'
 import { CloseOutlined } from '@ant-design/icons'
+import { MobileConnectWallet } from './mobileConnectWallet'
 
 interface MenuDrawerProps {
   visible: boolean
@@ -9,14 +10,6 @@ interface MenuDrawerProps {
 }
 
 const MenuDrawer: FC<MenuDrawerProps> = ({ visible, onPopupClose }) => {
-  const navigate = useNavigate()
-
-  const [internalVisible, setInvernalVisible] = useState(false)
-
-  useEffect(() => {
-    setInvernalVisible(visible)
-  }, [visible])
-
   return (
     <div>
       <Drawer
@@ -24,18 +17,19 @@ const MenuDrawer: FC<MenuDrawerProps> = ({ visible, onPopupClose }) => {
         open={visible}
         onClose={() => {
           onPopupClose()
-          // setInvernalVisible(false)
         }}
         placement='right'
         width='230px'
         drawerStyle={{ background: 'rgb(200 184 160 / 60%)' }}>
         <div className='popup-menu'>
-          <div
-            className='btn-close'
-            onClick={() => {
-              onPopupClose()
-            }}>
-            <CloseOutlined />
+          <div className='popup-menu_top'>
+            <div
+              className='btn-close'
+              onClick={() => {
+                onPopupClose()
+              }}>
+              <CloseOutlined />
+            </div>
           </div>
           <div
             className='navs'
@@ -51,6 +45,9 @@ const MenuDrawer: FC<MenuDrawerProps> = ({ visible, onPopupClose }) => {
             <li>
               <a href='/#activity'>记录</a>
             </li>
+          </div>
+          <div className='connect-wallet'>
+            <MobileConnectWallet />
           </div>
         </div>
       </Drawer>

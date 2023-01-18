@@ -63,6 +63,15 @@ a:active {
 }
 
 .popup-menu {
+  &_top {
+    .btn-close {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      cursor: pointer;
+    }
+  }
+
   .navs {
     display: flex;
     flex-direction: column;
@@ -77,13 +86,29 @@ a:active {
     }
   }
 
-  .btn-close {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-bottom: 12px;
-    cursor: pointer;
+  .connect-wallet {
+    .mobile__connect-wallet {
+      display: flex;
+      color: rgba(0, 0, 0, 0.5);
+      &-box {
+        margin-right: 12px;
+        font-size: 12px;
+        span {
+          margin-left: 4px;
+        }
+      }
+      &-disconnect {
+        p {
+          font-size: 12px;
+          span {
+            margin-left: 4px;
+          }
+        }
+      }
+    }
   }
+
+  
 }
 
 @media (max-width: 720px) {

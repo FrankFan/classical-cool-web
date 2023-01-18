@@ -20,7 +20,7 @@
     "react-pageflip": "^2.0.3",
     "sweetalert2": "^11.4.33",
     "swiper": "^8.3.2",
-    "umi": "^4.0.17",
+    "umi": "^4.0.47",
     "web3modal": "^1.9.9"
   },
   "devDependencies": {

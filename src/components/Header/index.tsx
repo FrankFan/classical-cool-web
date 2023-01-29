@@ -25,9 +25,11 @@ const Header: FC<HeaderProps> = () => {
           <li className=''>
             <a href='/#activity'>记录</a>
           </li>
-          {/* <li className=''>
-            <a href='#history'>历史</a>
-          </li> */}
+          <li className=''>
+            <a target='_blank' href='https://fo8q1pmkw7j.typeform.com/to/Dt8LjRmJ'>
+              合作申请
+            </a>
+          </li>
         </ul>
       </nav>
       <div className='connect-btn'>

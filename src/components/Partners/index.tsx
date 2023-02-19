@@ -10,13 +10,15 @@ const Partners: FC<IProps> = () => {
     <div id='partners'>
       <h2>Partners</h2>
       <div className='partners-list'>
-        <Space wrap style={{ gap: '20px' }}>
+        {/* @ts-ignore */}
+        <Space wrap style={{ '--gap': '20px' }}>
           <img src={logoUrl} alt='' />
           <img src={logoUrl} alt='' />
           <img src={logoUrl} alt='' />
           <img src={logoUrl} alt='' />
         </Space>
-        <Space wrap style={{ gap: '20px' }}>
+        {/* @ts-ignore */}
+        <Space wrap style={{ '--gap': '20px' }}>
           <img src={logoUrl} alt='' />
           <img src={logoUrl} alt='' />
           <img src={logoUrl} alt='' />

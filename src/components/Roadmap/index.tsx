@@ -29,7 +29,7 @@ const RoadMap: FC<RoadMapProps> = () => {
             <div className='content'>
               <div className='h1'>2023</div>
               <div className='h2'>Q2</div>
-              <div className='h3'>中国典颖持续 Mint，同步启动国际化典籍永存计划</div>
+              <div className='h3'>中国典籍持续 Mint，同步启动国际化典籍永存计划</div>
             </div>
           </Timeline.Item>
           <Timeline.Item dot={CustomDot()}>
@@ -50,7 +50,7 @@ const RoadMap: FC<RoadMapProps> = () => {
             <div className='content'>
               <div className='h1'>2024</div>
               <div className='h2'>Q1</div>
-              <div className='h3'>平台化，时间胶囊系列...</div>
+              <div className='h3'>平台化，时间胶囊系列</div>
             </div>
           </Timeline.Item>
         </Timeline>

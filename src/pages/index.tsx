@@ -7,6 +7,7 @@ import Header from '@/components/Header'
 import { MobileHeader } from '@/components/MobileHeader'
 import Record from '@/components/Record'
 import RoadMap from '@/components/Roadmap'
+import Team from '@/components/Team'
 import './index.less'
 
 export default function HomePage() {
@@ -19,7 +20,7 @@ export default function HomePage() {
       {/* <BookShow></BookShow> */}
       {/* <Activity></Activity> */}
       <RoadMap />
-      {/* <Record></Record>*/}
+      <Team />
       <Footer />
     </div>
   )

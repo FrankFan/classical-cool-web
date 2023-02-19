@@ -51,10 +51,10 @@ const BookList: FC<BookListProps> = () => {
   }
   return (
     <div className='bookList' id='booklist'>
-      {/* <p className='desc'>
+      {/* <div className='desc'>
         <div>790,028</div>
         <span>守护者</span>
-      </p> */}
+      </div> */}
       <Row className='book-container'>
         {/* <div className="left">
           <img src={coverImg} alt="" className="cover" />

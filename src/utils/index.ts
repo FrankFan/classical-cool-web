@@ -32,3 +32,12 @@ export const checkIfWalletConnected = async (): Promise<string> => {
     return ''
   }
 }
+
+export function getDefalutLang() {
+  try {
+    const lang = localStorage.getItem('classical_i18n_key') ?? 'en_US'
+    return lang
+  } catch (error) {
+    return 'en_US'
+  }
+}

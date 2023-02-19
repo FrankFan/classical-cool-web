@@ -2,11 +2,13 @@ import React from 'react'
 import { FC } from 'react'
 import ConnectWalletButton from '../ConnectWalletButton'
 import logo from '@/assets/logo/logo2.svg'
+import { useTranslation } from 'react-i18next'
 
 import './index.less'
 interface HeaderProps {}
 
 const Header: FC<HeaderProps> = () => {
+  const { t } = useTranslation()
   return (
     <header className='header'>
       <div className='logo'>

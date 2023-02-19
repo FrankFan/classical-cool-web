@@ -22,35 +22,35 @@ const RoadMap: FC<RoadMapProps> = () => {
             <div className='content'>
               <div className='h1'>2023</div>
               <div className='h2'>Q1</div>
-              <div className='h3'>中国典籍首发</div>
+              <div className='h3'>中国四书五经典籍首发</div>
             </div>
           </Timeline.Item>
           <Timeline.Item dot={CustomDot()}>
             <div className='content'>
               <div className='h1'>2023</div>
               <div className='h2'>Q2</div>
-              <div className='h3'>中国典颖持续 Mint，启动国际化而</div>
+              <div className='h3'>中国典颖持续 Mint，同步启动国际化典籍永存计划</div>
             </div>
           </Timeline.Item>
           <Timeline.Item dot={CustomDot()}>
             <div className='content'>
               <div className='h1'>2023</div>
               <div className='h2'>Q3</div>
-              <div className='h3'>和台湾、新加坡、香港博物馆建立连接</div>
+              <div className='h3'>博物馆、大学合作</div>
             </div>
           </Timeline.Item>
           <Timeline.Item dot={CustomDot()}>
             <div className='content'>
               <div className='h1'>2023</div>
               <div className='h2'>Q4</div>
-              <div className='h3'>UGC，大学合作，用户自主永存论文…</div>
+              <div className='h3'>支持 UGC 能力，用户自主永存论文等能力</div>
             </div>
           </Timeline.Item>
           <Timeline.Item dot={CustomDot()}>
             <div className='content'>
               <div className='h1'>2024</div>
               <div className='h2'>Q1</div>
-              <div className='h3'>平台化，上线增加时间胶囊系列</div>
+              <div className='h3'>平台化，时间胶囊系列...</div>
             </div>
           </Timeline.Item>
         </Timeline>

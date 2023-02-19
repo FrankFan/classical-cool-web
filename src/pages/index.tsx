@@ -5,6 +5,7 @@ import BookList from '@/components/BookList'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import { MobileHeader } from '@/components/MobileHeader'
+import Partners from '@/components/Partners'
 import Record from '@/components/Record'
 import RoadMap from '@/components/Roadmap'
 import Team from '@/components/Team'
@@ -21,6 +22,7 @@ export default function HomePage() {
       {/* <Activity></Activity> */}
       <RoadMap />
       <Team />
+      <Partners />
       <Footer />
     </div>
   )

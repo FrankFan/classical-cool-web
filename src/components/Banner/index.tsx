@@ -35,9 +35,9 @@ const Banner: FC<BannerProps> = () => {
         <SwiperSlide>
           <img src={banner2} alt='' />
         </SwiperSlide>
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <img src={banner3} alt='' />
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </div>
   )
